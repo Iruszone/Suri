@@ -1,163 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AutoDrive - Automobiles Hub</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QubitTech - Quantum Future</title>
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
     }
 
     body {
-      background-color: #f5f5f5;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #f1f5f9;
+      overflow-x: hidden;
     }
 
     header {
-      background-color: #1e1e1e;
-      color: white;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header h1 {
-      font-size: 24px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: #ff4c29;
-    }
-
-    .hero {
-      background: url('https://images.unsplash.com/photo-1549921296-3a6b5be0a482') no-repeat center center/cover;
-      height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-    }
-
-    .hero h2 {
-      font-size: 48px;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    .section {
-      padding: 60px 40px;
-    }
-
-    .section h3 {
-      font-size: 32px;
-      margin-bottom: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
 
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
+    h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #38bdf8, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .card {
-      background-color: white;
-      width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      overflow: hidden;
-      transition: transform 0.3s;
-    }
-
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-
-    .card h4 {
-      padding: 15px;
-      font-size: 20px;
-      text-align: center;
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, background 0.3s ease;
     }
 
     .card:hover {
-      transform: scale(1.03);
+      transform: translateY(-10px);
+      background: #334155;
     }
 
-    .contact {
-      text-align: center;
+    .card h2 {
+      font-size: 1.5rem;
+      color: #38bdf8;
+      margin-bottom: 10px;
     }
 
-    .contact p {
-      margin: 10px 0;
+    .card p {
+      color: #94a3b8;
+      line-height: 1.5;
     }
 
     footer {
-      background-color: #1e1e1e;
-      color: white;
       text-align: center;
-      padding: 15px 0;
+      padding: 20px;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>AutoDrive</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#cars">Cars</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>Welcome to QubitTech</h1>
+    <p class="subtitle">Unleashing the power of quantum computing for the next era of innovation.</p>
   </header>
 
-  <section class="hero" id="home">
-    <h2>Drive the Future Today</h2>
-  </section>
+  <section class="container">
+    <div class="card">
+      <h2>🧠 Quantum Intelligence</h2>
+      <p>Our AI models leverage qubit interactions to solve complex problems beyond classical capabilities.</p>
+    </div>
 
-  <section class="section" id="cars">
-    <h3>Featured Automobiles</h3>
-    <div class="cards">
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="Sport Car">
-        <h4>Speedster X1</h4>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1603215687722-3b5e9d2966b7" alt="Electric Car">
-        <h4>EcoDrive E3</h4>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1549921296-3a6b5be0a482" alt="Luxury SUV">
-        <h4>Luxora SUV</h4>
-      </div>
+    <div class="card">
+      <h2>⚛️ Superposition & Entanglement</h2>
+      <p>Harness the unique properties of quantum physics to accelerate computing exponentially.</p>
+    </div>
+
+    <div class="card">
+      <h2>🔐 Quantum Encryption</h2>
+      <p>Secure your data with next-gen encryption powered by quantum key distribution protocols.</p>
+    </div>
+
+    <div class="card">
+      <h2>🚀 Real-time Simulation</h2>
+      <p>Model molecular structures, predict market behavior, and simulate physics — instantly.</p>
     </div>
   </section>
 
-  <section class="section contact" id="contact">
-    <h3>Contact Us</h3>
-    <p>Email: info@autodrive.com</p>
-    <p>Phone: +91-9876543210</p>
-    <p>Location: Bengaluru, India</p>
-  </section>
-
   <footer>
-    <p>&copy; 2025 AutoDrive. All rights reserved.</p>
+    © 2025 QubitTech Inc. | Exploring Tomorrow’s Tech Today
   </footer>
 
 </body>
