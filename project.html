@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoDrive - Automobiles Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ff4c29;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1549921296-3a6b5be0a482') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .section {
+      padding: 60px 40px;
+    }
+
+    .section h3 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background-color: white;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h4 {
+      padding: 15px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AutoDrive</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#cars">Cars</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Drive the Future Today</h2>
+  </section>
+
+  <section class="section" id="cars">
+    <h3>Featured Automobiles</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="Sport Car">
+        <h4>Speedster X1</h4>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1603215687722-3b5e9d2966b7" alt="Electric Car">
+        <h4>EcoDrive E3</h4>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1549921296-3a6b5be0a482" alt="Luxury SUV">
+        <h4>Luxora SUV</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: info@autodrive.com</p>
+    <p>Phone: +91-9876543210</p>
+    <p>Location: Bengaluru, India</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AutoDrive. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
